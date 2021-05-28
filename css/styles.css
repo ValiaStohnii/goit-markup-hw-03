@@ -259,9 +259,13 @@ section {
   font-style: normal;
 }
 .contacts-footer {
+  padding-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+.contacts-tel {
+  padding-bottom: 60px;
 }
 .footer-studio {
   color: var(--body-background-color);
@@ -269,7 +273,8 @@ section {
   font-size: 26px;
   line-height: 1.19;
 }
-.footer-mail {
-  margin-bottom: 9px;
+
+.footer-logo {
+  padding-top: 60px;
 }
 /*FOOTER*/
