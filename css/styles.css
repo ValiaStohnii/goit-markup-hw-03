@@ -19,10 +19,17 @@ ul {
   list-style: none;
 }
 
+.container{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+  
+}
+
 /*HEADER*/
 .nav-list a {
   color: var(--title-text-color);
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -30,10 +37,16 @@ ul {
   text-decoration: none;
 }
 
-.nav-list a:hover,
-.contacts-list:hover {
+.contacts-list a:hover {
   color: var(--link-color);
 }
+
+.link:hover,
+.link:focus,
+.link:active {
+  color: var(--link-color);
+}
+
 .logo {
   color: var(--link-color);
   font-family: Raleway;
@@ -51,22 +64,29 @@ ul {
 
 .contacts-list a {
   color: var(--primary-text-color);
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
+.contacts-list{
+  margin: 0;
+  padding: 0;
+}
 /*HEADER*/
 
 /*HERO SECTION*/
 .hero {
   background-color: var(--footer-background-color);
   color: var(--body-background-color);
+  padding-bottom: 200px;
+  margin-bottom: 0px;
 }
 .hero-subject {
+  padding-top: 200px;
+  margin-top: 0px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -76,8 +96,10 @@ ul {
 }
 
 .hero-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
   background-color: var(--link-color);
-  font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -86,17 +108,22 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+;
 }
 
 .hero-button,
 .button:hover {
   color: var(--body-background-color);
   background-color: var(--link-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button {
+  border-radius: 4px;
+  border: transparent;
+  padding: 6px 22px;
+  margin-bottom: 8px;
   color: var(--title-text-color);
   background-color: var(--team-section-color);
-  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -106,25 +133,48 @@ ul {
 /*HERO SECTION*/
 
 /*Features*/
+
 .features-list .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 .features-list {
   font-size: 14px;
   line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+.features-title{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.features-list p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title{
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 /*Features*/
 
 /*IMG-SECTION*/
 .caption {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+.images-list{
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /*IMG-SECTION*/
 
@@ -146,6 +196,8 @@ ul {
 /*TEAM SECTION*/
 
 .name {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -155,19 +207,35 @@ ul {
   background-color: var(--team-section-color);
 }
 .team-card p {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.18;
+}
+.team-card{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.team-card img{
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 /*TEAM SECTION*/
 
 /*FOOTER*/
+.logo{
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
 .footer {
   background-color: var(--footer-background-color);
 }
 .address {
+  margin-bottom: 9px;
   color: var(--body-background-color);
   font-size: 14px;
   line-height: 1.71;
+  font-style: normal
 }
 .contacts-footer {
   font-size: 14px;
