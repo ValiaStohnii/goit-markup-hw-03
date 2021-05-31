@@ -16,6 +16,8 @@ body {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -26,10 +28,13 @@ ul {
   /*outline: 2px solid red;*/
 }
 
-section {
-  padding-bottom: 94px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
 }
-
 /*HEADER*/
 .header {
   display: flex;
@@ -55,8 +60,8 @@ section {
 
 .nav-list {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-list .item {
@@ -79,13 +84,12 @@ section {
 .nav-list .link.current {
   color: var(--link-color);
 }
-.header-logo {
-  display: flex;
-  margin-top: 24px;
-  margin-bottom: 25px;
-  margin-right: 93px;
-}
+
 .logo {
+  display: block;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   color: var(--link-color);
   font-family: Raleway;
   font-size: 26px;
@@ -110,8 +114,10 @@ section {
 }
 .contacts-list {
   display: flex;
-  margin-left: 331px;
-  padding: 0;
+  margin: 0 0 0 331px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0;
 }
 .contacts-list .item + .item {
   margin-left: 50px;
@@ -122,14 +128,12 @@ section {
 .hero {
   background-color: var(--footer-background-color);
   color: var(--body-background-color);
+  padding-top: 200px;
   padding-bottom: 200px;
   margin-bottom: 0px;
   text-align: center;
 }
 .hero-subject {
-  padding-top: 200px;
-  margin-top: 0px;
-  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -139,6 +143,7 @@ section {
 }
 
 .hero-button {
+  margin-top: 30px;
   align-items: center;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -159,11 +164,15 @@ section {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+.button-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .button {
   border-radius: 4px;
   border: transparent;
   padding: 6px 22px;
-  margin-bottom: 8px;
   color: var(--title-text-color);
   background-color: var(--team-section-color);
   font-weight: 500;
@@ -178,9 +187,7 @@ section {
   flex-direction: row;
   justify-content: center;
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 94px;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
 }
 .button-list li {
   margin-right: 8px;
@@ -191,7 +198,9 @@ section {
 /*HERO SECTION*/
 
 /*Features*/
-
+.features {
+  padding-top: 94px;
+}
 .features-list .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -202,7 +211,6 @@ section {
 .features-list {
   display: flex;
   flex-direction: row;
-  padding-top: 94px;
   font-size: 14px;
   line-height: 1.71;
   margin-top: 0;
@@ -231,6 +239,10 @@ section {
 /*Features*/
 
 /*IMG-SECTION*/
+.img-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .caption {
   margin-top: 0;
   margin-bottom: 50px;
@@ -257,6 +269,12 @@ section {
 /*IMG-SECTION*/
 
 /*PROJECT SECTION portfolio*/
+.projects-item {
+  padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -267,16 +285,15 @@ section {
   margin-right: 30px;
   margin-bottom: 30px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
 .projects li:nth-child(3n) {
   margin-right: 0px;
 }
-.project-section h3 {
-  margin-top: 20px;
+.projects li:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.projects h3 {
   margin-bottom: 4px;
-  margin-left: 24px;
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 18px;
@@ -284,26 +301,24 @@ section {
   letter-spacing: 0.06em;
 }
 
-.project-section p {
-  margin-top: 0;
-  margin-bottom: 20px;
-  margin-left: 24px;
+.projects p {
+  margin: 0;
   font-size: 16px;
   line-height: 1.87;
 }
 
-.project-section ul {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 /*PROJECT SECTION*/
 
 /*TEAM SECTION*/
-
 .name {
-  margin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.name h3 {
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
@@ -313,19 +328,19 @@ section {
   letter-spacing: 0.03em;
 }
 .our-team {
+  padding-bottom: 94px;
   background-color: var(--team-section-color);
 }
 .team-card li {
   margin-right: 30px;
   width: 270px;
   background-color: #ffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+}
+.team-card li:last-child {
+  margin-right: 0;
 }
 .team-card p {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -340,17 +355,22 @@ section {
 .team-card img {
   width: 100%;
   margin-top: 0;
-  margin-bottom: 30px;
 }
 /*TEAM SECTION*/
 
 /*FOOTER*/
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-background-color);
 }
+.footer .logo {
+  padding-top: 0;
+  padding-bottom: 20px;
+  margin: 0;
+}
 .address {
-  margin-top: 20px;
   margin-bottom: 9px;
   color: var(--body-background-color);
   font-size: 14px;
@@ -358,7 +378,8 @@ section {
   font-style: normal;
 }
 .contacts-list-footer {
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 .contacts-list-footer a {
   color: var(--primary-text-color);
@@ -369,14 +390,12 @@ section {
   text-decoration: none;
 }
 .contacts-footer {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
-.contacts-tel {
-  padding-bottom: 60px;
-}
+
 .footer-studio {
   color: var(--body-background-color);
   font-family: Raleway;
@@ -384,7 +403,4 @@ section {
   line-height: 1.19;
 }
 
-.footer-logo {
-  padding-top: 60px;
-}
 /*FOOTER*/
